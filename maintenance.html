@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>사이트 점검 중입니다</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+      background: linear-gradient(135deg, #0d1b2a, #1b263b); /* 네이비 그라데이션 */
+      color: #e0e0e0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    .icon {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+      fill: #4a90e2; /* 블루 포인트 */
+    }
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 15px;
+      color: #e0f2ff;
+    }
+    p {
+      font-size: 1.1em;
+      color: #cfd8dc;
+      line-height: 1.6;
+    }
+    footer {
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #90caf9;
+      opacity: 0.8;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 톱니바퀴 아이콘 (사이트 점검과 어울림) -->
+    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+      <path d="M32 22a10 10 0 100 20 10 10 0 000-20zm28 10l-6-2a22 22 0 00-2-6l4-5-6-6-5 4a22 22 0 00-6-2l-2-6h-8l-2 6a22 22 0 00-6 2l-5-4-6 6 4 5a22 22 0 00-2 6l-6 2v8l6 2a22 22 0 002 6l-4 5 6 6 5-4a22 22 0 006 2l2 6h8l2-6a22 22 0 006-2l5 4 6-6-4-5a22 22 0 002-6l6-2v-8z"/>
+    </svg>
+    <h1>사이트 점검 중입니다</h1>
+    <p>현재 시스템 점검을 진행하고 있습니다.<br>
+       나중에 다시 방문해 주세요.</p>
+    <footer>www.bitneer.dev</footer>
+  </div>
+</body>
+</html>
